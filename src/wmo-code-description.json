@@ -1,0 +1,282 @@
+{
+  "0": {
+    "day": {
+      "description": "Sunny",
+      "gif": "sunny"
+    },
+    "night": {
+      "description": "Clear",
+      "gif": "clear"
+    }
+  },
+  "1": {
+    "day": {
+      "description": "Mainly Sunny",
+      "gif": "sunny"
+    },
+    "night": {
+      "description": "Mainly Clear",
+      "gif": "mainly-clear"
+    }
+  },
+  "2": {
+    "day": {
+      "description": "Partly Cloudy",
+      "gif": "partly-cloudy"
+    },
+    "night": {
+      "description": "Partly Cloudy",
+      "gif": "cloudy-night"
+    }
+  },
+  "3": {
+    "day": {
+      "description": "Cloudy",
+      "gif": "cloudy"
+    },
+    "night": {
+      "description": "Cloudy",
+      "gif": "cloudy-night"
+    }
+  },
+  "45": {
+    "day": {
+      "description": "Foggy",
+      "gif": "foggy"
+    },
+    "night": {
+      "description": "Foggy",
+      "gif": "foggy"
+    }
+  },
+  "48": {
+    "day": {
+      "description": "Rime Fog",
+      "gif": "foggy"
+    },
+    "night": {
+      "description": "Rime Fog",
+      "gif": "foggy"
+    }
+  },
+  "51": {
+    "day": {
+      "description": "Light Drizzle",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Light Drizzle",
+      "gif": "rainy"
+    }
+  },
+  "53": {
+    "day": {
+      "description": "Drizzle",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Drizzle",
+      "gif": "rainy"
+    }
+  },
+  "55": {
+    "day": {
+      "description": "Heavy Drizzle",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Heavy Drizzle",
+      "gif": "rainy"
+    }
+  },
+  "56": {
+    "day": {
+      "description": "Light Freezing Drizzle",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Light Freezing Drizzle",
+      "gif": "rainy"
+    }
+  },
+  "57": {
+    "day": {
+      "description": "Freezing Drizzle",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Freezing Drizzle",
+      "gif": "rainy"
+    }
+  },
+  "61": {
+    "day": {
+      "description": "Light Rain",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Light Rain",
+      "gif": "rainy"
+    }
+  },
+  "63": {
+    "day": {
+      "description": "Rain",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Rain",
+      "gif": "rainy"
+    }
+  },
+  "65": {
+    "day": {
+      "description": "Heavy Rain",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Heavy Rain",
+      "gif": "rainy"
+    }
+  },
+  "66": {
+    "day": {
+      "description": "Light Freezing Rain",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Light Freezing Rain",
+      "gif": "rainy"
+    }
+  },
+  "67": {
+    "day": {
+      "description": "Freezing Rain",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Freezing Rain",
+      "gif": "rainy"
+    }
+  },
+  "71": {
+    "day": {
+      "description": "Light Snow",
+      "gif": "snowy"
+    },
+    "night": {
+      "description": "Light Snow",
+      "gif": "snowy"
+    }
+  },
+  "73": {
+    "day": {
+      "description": "Snow",
+      "gif": "snowy"
+    },
+    "night": {
+      "description": "Snow",
+      "gif": "snowy"
+    }
+  },
+  "75": {
+    "day": {
+      "description": "Heavy Snow",
+      "gif": "snowy"
+    },
+    "night": {
+      "description": "Heavy Snow",
+      "gif": "snowy"
+    }
+  },
+  "77": {
+    "day": {
+      "description": "Snow Grains",
+      "gif": "snowy"
+    },
+    "night": {
+      "description": "Snow Grains",
+      "gif": "snowy"
+    }
+  },
+  "80": {
+    "day": {
+      "description": "Light Showers",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Light Showers",
+      "gif": "rainy"
+    }
+  },
+  "81": {
+    "day": {
+      "description": "Showers",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Showers",
+      "gif": "rainy"
+    }
+  },
+  "82": {
+    "day": {
+      "description": "Heavy Showers",
+      "gif": "rainy"
+    },
+    "night": {
+      "description": "Heavy Showers",
+      "gif": "rainy"
+    }
+  },
+  "85": {
+    "day": {
+      "description": "Light Snow Showers",
+      "gif": "snowy"
+    },
+    "night": {
+      "description": "Light Snow Showers",
+      "gif": "snowy"
+    }
+  },
+  "86": {
+    "day": {
+      "description": "Snow Showers",
+      "gif": "snowy"
+    },
+    "night": {
+      "description": "Snow Showers",
+      "gif": "snowy"
+    }
+  },
+  "95": {
+    "day": {
+      "description": "Thunderstorm",
+      "gif": "stormy"
+    },
+    "night": {
+      "description": "Thunderstorm",
+      "gif": "stormy"
+    }
+  },
+  "96": {
+    "day": {
+      "description": "Light Thunderstorms With Hail",
+      "gif": "stormy"
+    },
+    "night": {
+      "description": "Light Thunderstorms With Hail",
+      "gif": "stormy"
+    }
+  },
+  "99": {
+    "day": {
+      "description": "Thunderstorm With Hail",
+      "gif": "stormy"
+    },
+    "night": {
+      "description": "Thunderstorm With Hail",
+      "gif": "stormy"
+    }
+  }
+}
