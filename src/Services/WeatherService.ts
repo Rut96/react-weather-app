@@ -14,7 +14,7 @@ type City = {
 
 type WeatherResponse = {
     current: CurrWeatherModel;
-    daily: ForecastModel[];
+    daily: ForecastModel;
 }
 
 class WeatherService {
@@ -27,6 +27,15 @@ class WeatherService {
 
     private findCity(cityName: string): City | undefined {
         return this.cities.find(city => city.name.toLowerCase() === cityName.toLowerCase());
+    }
+
+    private getWeatherDescription(weatherCode: number, isDay: boolean): string {
+        const weatherInfo = weatherCodes[weatherCode.toString() as keyof typeof weatherCodes];
+        if (weatherInfo) {
+            const timeOfDay = isDay ? "day" : "night";
+            return weatherInfo[timeOfDay].description;
+        }
+        return "Unknown weather condition";
     }
 
     public async getWeatherData(cityName: string): Promise<WeatherResponse> {
@@ -46,11 +55,27 @@ class WeatherService {
         try {
             const response = await axios.get<WeatherResponse>(appConfig.wetherApiUrl, { params });
 
-            const weatherInfo = weatherCodes[response.data.current.weather_code?.toString() as keyof typeof weatherCodes];
-            if (weatherInfo) {
-                const timeOfDay = response.data.current.is_day === 1 ? "day" : "night";
-                response.data.current.weather_description = weatherInfo[timeOfDay].description;
-            }
+            // const weatherInfo = weatherCodes[response.data.current.weather_code?.toString() as keyof typeof weatherCodes];
+
+            // if (weatherInfo) {
+            //     const timeOfDay = response.data.current.is_day === 1 ? "day" : "night";
+            //     response.data.current.weather_description = weatherInfo[timeOfDay].description;
+            // }
+
+            // Process current weather
+            const currentWeather = response.data.current;
+            currentWeather.weather_description = this.getWeatherDescription(
+                currentWeather.weather_code as number,
+                currentWeather.is_day === 1
+            );
+
+            // Process forecast
+            const forecastData = response.data.daily;
+            forecastData.weather_description = forecastData.weather_code.map((code, index) => {
+                // Assume daytime for forecast (you might want to adjust this logic)
+                return this.getWeatherDescription(code, true);
+            });
+
 
             const weatherData = {
                 current: response.data.current,

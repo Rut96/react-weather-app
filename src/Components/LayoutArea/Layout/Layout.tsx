@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 export function Layout(): JSX.Element {
     const [weatherData, setWeatherData] = useState<CurrWeatherModel>();
-    const [forecastData, setForecastData] = useState<ForecastModel[]>();
+    const [forecastData, setForecastData] = useState<ForecastModel>();
     const [cityName, setCityName] = useState<string>("");
     const navigate = useNavigate();
 

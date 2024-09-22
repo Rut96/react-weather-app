@@ -7,7 +7,7 @@ import { ForecastModel } from "../../../Models/ForecastModel";
 
 type RoutingProps = {
     weatherData: CurrWeatherModel;
-    forecastData: ForecastModel[];
+    forecastData: ForecastModel;
     cityName: string;
     weatherCode?: number;
     isDay?: number;

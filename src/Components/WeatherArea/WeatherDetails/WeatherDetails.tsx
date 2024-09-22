@@ -8,7 +8,7 @@ import "./WeatherDetails.css";
 
 type WeatherDetailsProps = {
     weather: CurrWeatherModel;
-    forecast: ForecastModel[];
+    forecast: ForecastModel;
     cityName: string;
     weatherCode?: number;
     isDay?: number;
