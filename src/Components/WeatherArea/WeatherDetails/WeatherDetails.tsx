@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { CurrWeatherModel } from "../../../Models/CurrWeatherModel";
 import { ForecastModel } from "../../../Models/ForecastModel";
 import { Forecast } from "../Forecast/Forecast";
@@ -15,8 +14,6 @@ type WeatherDetailsProps = {
 }
 
 export function WeatherDetails({ weather, forecast, cityName, weatherCode, isDay }: WeatherDetailsProps): JSX.Element {
-
-
 
     return (
         <div className="WeatherDetails">

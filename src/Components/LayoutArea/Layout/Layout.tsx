@@ -32,7 +32,7 @@ export function Layout(): JSX.Element {
         <div className="Layout">
             <WeatherBackground weatherCode={weatherData?.weather_code} isDay={weatherData?.is_day} />
             <div className="weather-card">
-                <header className="weather-header">
+                <header>
                     <Search onSearch={handleSearch} />
                 </header>
                 <main>

@@ -1,64 +1,97 @@
 .WeatherInfo {
+    width: 100%;
+    padding: 1rem;
     flex: 2;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.weather-header {
+.WeatherInfo .weather-header {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    margin-bottom: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .weather-header h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
     text-transform: capitalize;
 }
 
 .weather-header-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.weather-header-info p:first-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.weather-header-info p:last-child {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
 }
 
 .other-info {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.other-info p {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: capitalize;
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .weather-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: #fff;
-    flex: 1;
-    max-width: 33%;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
 }
 
-
-.other-info .weather-info img {
-    margin-bottom: 0.25rem;
-    width: 50px;
+.weather-info:hover {
+    transform: translateY(-5px);
 }
 
-.weather-info span {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
+.weather-info img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.weather-info p {
-    font-size: 0.8rem;
+@media (min-width: 1024px) {
+    .weather-header h2 {
+        font-size: 3rem;
+    }
+    .weather-header-info p:first-child {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .WeatherInfo {
+        padding: 2rem;
+    }
+
+    .weather-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .other-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
